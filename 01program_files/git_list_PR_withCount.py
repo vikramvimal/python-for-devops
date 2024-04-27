@@ -4,7 +4,7 @@
 import requests
 
 # URL to fetch pull requests from the GitHub API
-url = f'https://api.github.com/repos/kubernetes/kubernetes/pulls'
+url = f'https://api.github.com/repos/iam-veeramalla/python-for-devops/pulls'
 
 # Make a GET request to fetch pull requests data from the GitHub API
 response = requests.get(url)  # Add headers=headers inside get() for authentication
@@ -13,7 +13,7 @@ response = requests.get(url)  # Add headers=headers inside get() for authenticat
 if response.status_code == 200:
     # Convert the JSON response to a dictionary
     pull_requests = response.json()
-
+    
     # Create an empty dictionary to store PR creators and their counts
     pr_creators = {}
 
